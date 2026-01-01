@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>LugoVPN</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- Optional: Add an icon library if available, or use SVG -->
+</head>
+
+<body>
+    <header>
+        LUGOVPN
+    </header>
+
+    <main>
+        <div id="status-container">
+            <div id="status-text">...</div>
+            <div id="status-subtext">Inicializando</div>
+        </div>
+
+        <button id="btn-main" class="disconnected">
+            <span id="btn-text">CONECTAR</span>
+        </button>
+
+        <div id="location-container">
+            <select id="location-select">
+                <option value="br">🇧🇷 Brasil (São Paulo)</option>
+                <option value="us">🇺🇸 USA (Virginia)</option>
+                <option value="de">🇩🇪 Germany (Frankfurt)</option>
+            </select>
+        </div>
+    </main>
+
+    <div id="error-toast"></div>
+
+    <footer>
+        <button class="icon-btn" title="Configurações">⚙️</button>
+    </footer>
+
+    <script src="./src/main.js" type="module"></script>
+</body>
+
+</html>
